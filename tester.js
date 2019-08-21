@@ -66,6 +66,8 @@ function splitingAnArray(array) {
   }
 }
 
+// mongodb://<dbuser>:<dbpassword>@ds311538.mlab.com:11538/mock-premier-league
+//DB_CONNECT = mongodb://localhost:27017/mockPremierLeague
 
 let arraydata = [1, 1, 1, 2, 1]
 console.log(splitingAnArray(arraydata))

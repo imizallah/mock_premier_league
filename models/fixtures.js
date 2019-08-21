@@ -23,6 +23,11 @@ const fixtureSchema = new Schema({
     type: Number,
     default: 0
   },
+  match_time: {
+    type: String,
+    required: true,
+    index: true
+  },
   match_period: {
     type: String,
     required: true
