@@ -8,7 +8,7 @@ const redis = require('redis');
 const redisClient = redis.createClient();
 const redisStore = require('connect-redis')(session);
 const bodyParser = require('body-parser');
-let PORT = process.env.PORT;
+let PORT = process.env.PORT || 4000;
 
 // //models
 const userModel = require("./models/user");
