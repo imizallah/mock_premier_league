@@ -67,6 +67,10 @@ app.use(session({
 }));
 // ============================================================================================
 
+app.get("/", (req, res) => {
+  res.send("I am working ooo....");
+});
+
 // routes
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
