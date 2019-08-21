@@ -67,8 +67,8 @@ app.use(session({
 }));
 // ============================================================================================
 
-app.get("/", (req, res) => {
-  res.send("I am working ooo....");
+app.use("/", (req, res) => {
+  res.send("Welcome to the homepage");
 });
 
 // routes
