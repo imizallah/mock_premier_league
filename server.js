@@ -31,7 +31,7 @@ redisClient.on('error', (err) => {
 mongoose.Promise = global.Promise;
 
 // Configure Mongoose to Connect to MongoDB
-mongoose.connect(process.env.DB_CONNECT, {
+mongoose.connect("mongodb://imizallah:imizallah1990@ds311538.mlab.com:11538/mock-premier-league", {
     useCreateIndex: true,
     useNewUrlParser: true
   })
