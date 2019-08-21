@@ -1,0 +1,583 @@
+{
+	"info": {
+		"_postman_id": "62136d92-6e0c-4a14-be5f-13fe23fef0a7",
+		"name": "Mock premier League",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "teams",
+			"item": [
+				{
+					"name": "http://localhost:4000/api/teams/create",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNTE1OTA0MDY1OWM1NjhkYzc0OGYxMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTU2NjMzMTMzMCwiZXhwIjoxNTY2MzM0OTMwfQ.WWKkA_vboZLvA3Z2DD87Mu9dvUvQpRodS3PHNPC6pcE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"teamName\": \"West Ham United\",\n\t\"manager\": \"Manuel Pellegrini\",\n\t\"stadium\": \"London Stadium\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/team/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"team",
+								"create"
+							]
+						},
+						"description": "Post route to create a team"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/teams/view",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNTE1OTA0MDY1OWM1NjhkYzc0OGYxMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTU2NjMzNTE0NiwiZXhwIjoxNTY2MzM4NzQ2fQ.bAA5LpgKjSFpa7P1sRJ-6eNaKpIt0HDGmx1OgKHGzoE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/teams/view",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"teams",
+								"view"
+							]
+						},
+						"description": "GET Request to view all Teams"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/teams/update/5d5c5be87ac622579a4ece5a",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNTE1OTA0MDY1OWM1NjhkYzc0OGYxMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTU2NjMzNzU1MCwiZXhwIjoxNTY2MzQxMTUwfQ._AFfCl7JksN16wMIBWUzJtRbR7KpfR-9Ok8R6TYQThE",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"teamName\": \"Gombe United\",\n\t\"manager\": \"Manuel Pellegrini\",\n\t\"stadium\": \"Gombe State Stadium\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/teams/update/5d5c56d07ac622579a4ece53",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"teams",
+								"update",
+								"5d5c56d07ac622579a4ece53"
+							]
+						},
+						"description": "Put/Update/Edit Team API with team_id:5d5c5be87ac622579a4ece5a (Only By the Admin Users)"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/teams/delete/5d5c5a507ac622579a4ece58",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNTE1OTA0MDY1OWM1NjhkYzc0OGYxMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTU2NjMzNzU1MCwiZXhwIjoxNTY2MzQxMTUwfQ._AFfCl7JksN16wMIBWUzJtRbR7KpfR-9Ok8R6TYQThE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/teams/delete/5d5c56807ac622579a4ece51",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"teams",
+								"delete",
+								"5d5c56807ac622579a4ece51"
+							]
+						},
+						"description": "Delete API to delete Teams (Only By Admin)"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "http://localhost:4000/api/auth/login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNTE1OGRlMDY1OWM1NjhkYzc0OGYxMCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNTY2MzI4MjQ1LCJleHAiOjE1NjYzMzE4NDV9.OHGMGVuC_9RypwvGe_52NzEe-AfYzTNlGsUHQKTdngo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"ishaya@gmail.com\",\n    \"password\": \"imizallah\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						},
+						"description": "Authentication/Login API for All Users"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/users/register/admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						},
+						"description": "POST API to create a Admin"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/users/register ",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						},
+						"description": "POST API to create a User"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/fixture/pending",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNTE1OTA0MDY1OWM1NjhkYzc0OGYxMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTU2NjM0NjYyOCwiZXhwIjoxNTY2MzUwMjI4fQ.EMFMVcuaAqrMw2v_TG6CNSD6rrsqXQ-H6ktH16XT7Lw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/fixture/pending",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"fixture",
+								"pending"
+							]
+						},
+						"description": "GET API for Pending Fixtures (For All Users)"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/fixture/finished",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNTE1OTA0MDY1OWM1NjhkYzc0OGYxMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTU2NjM0NjYyOCwiZXhwIjoxNTY2MzUwMjI4fQ.EMFMVcuaAqrMw2v_TG6CNSD6rrsqXQ-H6ktH16XT7Lw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/fixture/finished",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"fixture",
+								"finished"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						},
+						"description": "GET API for Finished Matches (For All Users)"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/search/team",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNTE1OTA0MDY1OWM1NjhkYzc0OGYxMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTU2NjM0OTg3OSwiZXhwIjoxNTY2MzUzNDc5fQ.xWVXeZOBWO4mD49JU1eEjJm7V22lTIxfZuYTw_7NjyE",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"teamName\": \"Plateau United\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/search/team",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"search",
+								"team"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						},
+						"description": "POST API for searching teams by team-name (API is availble to the public)"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/search/fixture",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNTE1OTA0MDY1OWM1NjhkYzc0OGYxMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTU2NjM0OTg3OSwiZXhwIjoxNTY2MzUzNDc5fQ.xWVXeZOBWO4mD49JU1eEjJm7V22lTIxfZuYTw_7NjyE",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"team\": \"Sunshine Stars\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/search/fixture",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"search",
+								"fixture"
+							]
+						},
+						"description": "POST API for searching fixtures by team-name (API is availble to the public)"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "fixtures",
+			"item": [
+				{
+					"name": "http://localhost:4000/api/fixture/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNTE1OTA0MDY1OWM1NjhkYzc0OGYxMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTU2NjM0MjA4MiwiZXhwIjoxNTY2MzQ1NjgyfQ.LGj8dFyDO6RwuW7xjueZwS2FwcQzL6FiHXC8B_C6R7o",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"home_team\": \"Liverpool FC\",\n\t\"away_team\": \"West Ham United\",\n\t\"home_team_scores\": \"4\",\n\t\"away_team_scores\": \"0\",\n\t\"venue\": \"Anfiel Stadium\",\n\t\"match_period\": \"Full Time\",\n\t\"match_date\": \"November 2 2019\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/fixture/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"fixture",
+								"create"
+							]
+						},
+						"description": "POST Request to create Fixtures (Only By Admin User)"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/fixture/view",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNTE1OTM0MDY1OWM1NjhkYzc0OGYxNCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNTY2MzQ0NTQwLCJleHAiOjE1NjYzNDgxNDB9.BGYZBt344rAQrlZsIim5KGPEOuApf4kyZeB5kAu--SQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/fixture/view",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"fixture",
+								"view"
+							]
+						},
+						"description": "GET Request to view all Fixtures (By All Users)"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/fixture/update/5d5c8337a06875723211db02",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNTE1OTA0MDY1OWM1NjhkYzc0OGYxMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTU2NjM0NTQyNCwiZXhwIjoxNTY2MzQ5MDI0fQ.zKY_tWB8o14sTIfZPWBIINnBOw9xmbF8x8dVGqjlwm0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"home_team\": \"Eyimba FC\",\n\t\"away_team\": \"Sunshine Stars\",\n\t\"home_team_scores\": \"3\",\n\t\"away_team_scores\": \"1\",\n\t\"venue\": \"Abba\",\n\t\"match_period\": \"Full Time\",\n\t\"match_date\": \"November 2 2019\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/fixture/update/5d5c8337a06875723211db02",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"fixture",
+								"update",
+								"5d5c8337a06875723211db02"
+							]
+						},
+						"description": "Put/Update/Edit Routes for fixture (Only By the Admin User)"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/fixture/delete/5d5c8e24955d8677777a499e",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNTE1OTA0MDY1OWM1NjhkYzc0OGYxMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTU2NjM0NjYyOCwiZXhwIjoxNTY2MzUwMjI4fQ.EMFMVcuaAqrMw2v_TG6CNSD6rrsqXQ-H6ktH16XT7Lw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/fixture/delete/5d5c8e24955d8677777a499e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"fixture",
+								"delete",
+								"5d5c8e24955d8677777a499e"
+							]
+						},
+						"description": "Delete API for Fixtures (Only By Admin User)"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "unique_links",
+			"item": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNTA4NWZjNTk2NzY5MjI2NWFlMjk5NSIsInVzZXJuYW1lIjoib2xla3UiLCJpYXQiOjE1NjU2MTA2NjUsImV4cCI6MTU2NTYxNzg2NX0.kRZyywi85FxsH56BN-nhp4hff6TEDe9MBcOS07MFqUM",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "3d7d7b7f-4917-410e-aabd-617e548eb98e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b3ebca56-7364-47af-9f7f-e6647cb102e6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
